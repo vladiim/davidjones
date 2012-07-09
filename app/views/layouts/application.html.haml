@@ -1,0 +1,13 @@
+!!! 5
+
+%head= render 'layouts/head'
+
+%body#main
+
+  %nav= render 'layouts/navigation'
+
+  %section#main_content
+    = render 'layouts/flashes'
+    = yield
+
+  %footer= render 'layouts/footer'

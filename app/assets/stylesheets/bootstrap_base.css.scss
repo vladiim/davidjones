@@ -1,0 +1,18 @@
+//@import "colors";
+//@import "transitions";
+//@import "gradients";
+//@import "shadows";
+//@import "radius";
+
+// all variables listed @ https://github.com/twitter/bootstrap/blob/master/less/variables.less
+
+@import "bootstrap";
+
+p { color: white; }
+
+body#main { 
+//	margin-top: 100px ;
+	background: black;
+}
+
+@import "bootstrap-responsive";

@@ -1,0 +1,15 @@
+.container
+  %section#list.span9
+    = link_to "> Shop", categories_path
+    %h3.bold Kitchenware
+    - @products.each do |product|
+      %article
+        = link_to image_with_link(product.small_image), product_path(product)
+        %h4= product.brand.capitalize
+        %p= product.name
+        %strong#price
+          = "$#{product.price}"
+          = link_to image_with_link("btnAdd.jpeg"), "#"
+
+  %aside.span2.hidden-phone.hidden-tablet
+    = render 'shared/side_banners'

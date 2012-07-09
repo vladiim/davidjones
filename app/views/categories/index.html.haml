@@ -1,0 +1,9 @@
+.container
+  %section#list.span9
+    - @categories.each do |cat|
+      %article
+        %h3= cat.name.capitalize
+        = link_to image_with_link(cat.image), products_path
+
+  %aside.span2.hidden-phone.hidden-tablet
+    = render 'shared/side_banners'

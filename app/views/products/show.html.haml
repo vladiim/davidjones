@@ -1,0 +1,32 @@
+.container
+
+  #breadcrumb
+    = link_to "Shop", categories_path
+    = link_to "> Kitchenware", products_path
+
+  %section.span9
+
+    %section.span4
+      = image_with_link @product.big_image
+
+    %section.span4
+      %h3.bold= @product.brand.capitalize
+      %p.dotted_border= @product.name
+      %p= @product.description
+      %br
+      %br
+      %br
+      %br
+      %br
+      %div.dotted_border
+      %br
+      = image_with_link("product_price_cta2.jpeg")
+      #product_price= "$#{@product.price}"
+      %br
+      %br
+      %div.dotted_border
+      = image_with_link("quantity_select.jpeg")
+      = image_with_link("product_cta.jpeg")
+
+  %aside.span2.hidden-phone.hidden-tablet
+    = render 'shared/side_banners'
