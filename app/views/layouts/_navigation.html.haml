@@ -7,12 +7,12 @@
 
         .subnav
           %ul.nav.nav-pills.subnav
-            %li#nav_link.hidden-phone= link_to "What's On", "#"
-            %li#nav_link= link_to "Stores", "#"
-            %li#nav_link.hidden-phone= link_to "Our Brands", "#"
-            %li#nav_link.hidden-phone= link_to "Services", "#"
-            %li#nav_link.hidden-phone= link_to "Catalogues", "#"
+            %li#nav_link.hidden-phone= link_to "What's On", categories_path
+            %li#nav_link= link_to "Stores", categories_path
+            %li#nav_link.hidden-phone= link_to "Our Brands", categories_path
+            %li#nav_link.hidden-phone= link_to "Services", categories_path
+            %li#nav_link.hidden-phone= link_to "Catalogues", categories_path
             %li#nav_link= link_to "Shop Online", categories_path
-            %li#nav_link.hidden-phone.hidden-tablet= link_to "David Jones Cards", "#"
-            %li#nav_link.hidden-phone.hidden-tablet= link_to "Gift Cards", "#"
-            %li#nav_link.visible-phone.visible-tablet= link_to "Cart: 0", "#"
+            %li#nav_link.hidden-phone.hidden-tablet= link_to "David Jones Cards", categories_path
+            %li#nav_link.hidden-phone.hidden-tablet= link_to "Gift Cards", categories_path
+            %li#nav_link.visible-phone.visible-tablet= link_to "Cart: 0", categories_path
