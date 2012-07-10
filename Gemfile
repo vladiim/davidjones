@@ -4,7 +4,7 @@ gem 'rails', '~> 3.2.0'
 
 gem 'pg', '~> 0.13.0'
 gem 'heroku', '~> 2.21.0'
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'simple_form', '~> 2.0.0'
 gem 'pry', '~> 0.9.9.0'
 
