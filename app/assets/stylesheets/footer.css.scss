@@ -1,4 +1,4 @@
-footer div.footer {
+.footer {
 	background-color: white;
 	ul li {
 	    list-style: none;
@@ -6,5 +6,9 @@ footer div.footer {
 	    margin: 5px;
 	    float: left;
 	    display: inline;
+	    a {
+	    	color: white;
+	    	font-size: 70%;
+	    }
 	}
 }
